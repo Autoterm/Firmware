@@ -27,6 +27,7 @@
     | Microcontroller       | Programmator      | Link |
     | ----------------------| :---------------: | ---- |
     | STM32                 | ST-Link-V2        | https://www.st.com/en/development-tools/stsw-link004.html |
+    | STM32                 | STLINK-V3MINIE    | https://www.st.com/en/development-tools/stm32cubeprog.html |
     | Microchip             | PICkit4           | ----      |
     | Raspberry             | ---               | ----      |
 
@@ -35,7 +36,12 @@
     
     <img src="./img/ST-Link-V2-Pinout.png" width="600">
 
+    ### STLINK-V3MINIE
+
+    <img src="./img/ST-Link-V3-Mini-Pinout.png" width="600">
+
 </details>
+
 
 3. <details>
     <summary> Pinout for each PCB </summary>
@@ -97,7 +103,7 @@
         </details>
 
 
-    </details>
+</details>
 
 
 
@@ -117,7 +123,7 @@
 
         <img src="./img/STLinkUtility1.png" width="400">
 
-        5. Connect programming pins from ST Link V2 to programming pads on PCB. 
+        5. Connect programming pins from ST Link V2 to programming pads on PCB.  
         > **_NOTE:_**  Keep holding programming pins.
 
         6. Press OK in Settings menu
@@ -147,19 +153,24 @@
         <summary> STM32CubeProgrammer </summary>
 
         1. Download & install STM32CubeProgrammer
-    
-        2. Open programm and connect ST Link v2 to PC
-
+        2. Open programm and connect ST-Link-V3-Minie to PC
         3. Ensure that PC can read serial number and target voltage
 
         <img src="./img/prg1.png" width="1200">
 
         > **_NOTE:_**  Target voltage should be around +3.3V.
 
-        4. Setup programming settings and connect to microcontroller
+        4. Click on second icon from left side menu to open programming tab and enter path to file.
 
         <img src="./img/prg2.png" width="1200">
 
+        5. Setup programming settings and connect programming *pins* from ST-Link to programming *pads*
+
+        <img src="./img/prg3.png" width="1200">
+
+        > **_NOTE:_**  Keep holding programming pins.
+
+        6. 
     </details>   
 
 </details>    
