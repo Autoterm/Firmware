@@ -75,7 +75,7 @@
 
         [Hex file with GSM-AT0060-Modem code](./GSM-AT0060-Modem/Qstar_4G_V1.24.bin)
 
-        <img src="./img/TempImg.png" width="400">
+        <img src="./GSM-AT0060-Modem/GSM-Modem-STM32-Pinout.jpeg" width="400">
         </details>
 
     +   <details>
@@ -111,7 +111,7 @@
     <summary> How to write HEX / Bin file into microcontroler </summary>
  
     +   <details>
-        <summary> STM32 ST-LINK utility </summary>
+        <summary> STM32 ST-LINK utility ( Only for ST-Link/v2)</summary>
 
         1. Download & install STM32 ST-LINK utility
 
