@@ -5,7 +5,7 @@
 ## How programm microcontroller
 
 1. <details>
-    <summary> What microcontroller are on PCB </summary>
+    <summary> Which microcontroller is on PCB </summary>
 
     | Controll PCB          | Microcontroller     |
     | ----------------------| :---------------:   |
@@ -51,7 +51,7 @@
 
         [Hex file with Baltica Heater code](./Baltica-Controll/Heater/PushBoil%20(85C).bin)
 
-        <img src="./Baltica-Controll/Heater/Baltica-Controll-Pinout.jpeg" width="400">
+        <img src="./Baltica-Controll/Heater/Baltica-Controll-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -59,7 +59,7 @@
 
         [Hex file with Boiler Controll code](./Boiler-Controll/)
 
-        <img src="./Boiler-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="400">
+        <img src="./Boiler-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -67,7 +67,7 @@
 
         [Hex file with code](./Comfort-Controll/STM32_CC_V1.27.bin)
 
-        <img src="./Comfort-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="400">
+        <img src="./Comfort-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -75,7 +75,7 @@
 
         [Hex file with GSM-AT0060-Modem code](./GSM-AT0060-Modem/Qstar_4G_V1.24.bin)
 
-        <img src="./GSM-AT0060-Modem/GSM-Modem-STM32-Pinout.jpeg" width="400">
+        <img src="./GSM-AT0060-Modem/GSM-Modem-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -83,7 +83,7 @@
 
         [Hex file with Mini-Controll code](./Mini-Controll/MiniControl.bin)
 
-        <img src="./Mini-Controll/MIni-Controll-Pinout.jpeg" width="400">
+        <img src="./Mini-Controll/MIni-Controll-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -99,7 +99,7 @@
 
         [Hex file with Travel-Box code](./Travel-Box-Relay/Pow_switch_V1.1.bin)
 
-        <img src="./Travel-Box-Relay/Push-Controll-Pinout.jpeg" width="400">
+        <img src="./Travel-Box-Relay/Push-Controll-Pinout.jpeg" width="600">
         </details>
 
 
@@ -112,39 +112,39 @@
  
     +   <details>
         <summary> STM32 ST-LINK utility ( Only for ST-Link/v2)</summary>
+        
+        4.1. Download & install STM32 ST-LINK utility
 
-        1. Download & install STM32 ST-LINK utility
+        4.2. Open programm and connect ST Link v2 to PC
 
-        2. Open programm and connect ST Link v2 to PC
+        4.3. Select from drop down menu Target -> Settings
 
-        3. Select from drop down menu Target -> Settings
-
-        4. Configure programmator settings:
+        4.4. Configure programmator settings:
 
         <img src="./img/STLinkUtility1.png" width="400">
 
-        5. Connect programming pins from ST Link V2 to programming pads on PCB.  
+        4.5. Connect programming pins from ST Link V2 to programming pads on PCB.  
         > **_NOTE:_**  Keep holding programming pins.
 
-        6. Press OK in Settings menu
+        4.6. Press OK in Settings menu
 
-        7. If connection successful you shoul see device memory map, family, ID.
+        4.7. If connection successful you shoul see device memory map, family, ID.
 
         <img src="./img/STLinkUtility2.png" width="800">
 
-        8. Select HEX / Bin file by clicling on File -> Open file -> *select file* -> Open. In logs you can see file checksum - we will need it to verify programm instalation.
+        4.8. Select HEX / Bin file by clicling on File -> Open file -> *select file* -> Open. In logs you can see file checksum - we will need it to verify programm instalation.
 
         <img src="./img/STLinkUtility3.png" width="800">
 
-        9. Select from upper menu Target -> Program & Verify. Double check file path and press *Start*.
+        4.9. Select from upper menu Target -> Program & Verify. Double check file path and press *Start*.
 
         <img src="./img/STLinkUtility4.png" width="800">
 
-        10. If programming succeed - compare programmed memory checksum with HEX / Bin file checksum.
+        4.10. If programming succeed - compare programmed memory checksum with HEX / Bin file checksum.
 
         <img src="./img/STLinkUtility5.png" width="800">
 
-        11. Disconnect from microcontroller by selcting Target -> Disconnect.
+        4.11. Disconnect from microcontroller by selcting Target -> Disconnect.
         > **_NOTE:_**  Now you can remove programming pins.
 
         </details> 
@@ -152,25 +152,49 @@
     +   <details>
         <summary> STM32CubeProgrammer </summary>
 
-        1. Download & install STM32CubeProgrammer
-        2. Open programm and connect ST-Link-V3-Minie to PC
-        3. Ensure that PC can read serial number and target voltage
+        4.1. Download & install STM32CubeProgrammer.
+        
+        4.2. Open programm and connect ST-Link-V3-Minie to PC.
+        
+        4.3. Ensure that PC can read serial number and target voltage.
 
         <img src="./img/prg1.png" width="1200">
 
         > **_NOTE:_**  Target voltage should be around +3.3V.
 
-        4. Click on second icon from left side menu to open programming tab and enter path to file.
+        4.4. Click on second icon from left side menu to open programming tab and enter path to file.
 
         <img src="./img/prg2.png" width="1200">
 
-        5. Setup programming settings and connect programming *pins* from ST-Link to programming *pads*
+        4.5. Setup programming settings and connect programming *pins* from ST-Link to programming *pads* on PCB. Press connect.
 
         <img src="./img/prg3.png" width="1200">
 
         > **_NOTE:_**  Keep holding programming pins.
 
-        6. 
+        4.6. If connection was successful you should see information about MCU eg. Device name, Type, ID...
+
+        <img src="./img/prg4.png" width="1200">
+
+        4.7. Press *Start Programming*
+
+        <img src="./img/prg5.png" width="1200">
+
+        4.8 Press *Disconnect* and remove programming pins
     </details>   
+
+5. <details>
+    <summary> Potenial problems & how to fix them </summary>
+
+    Programmator can not connect to target
+    - Check swDIO and swCLK pins
+    - Check GND connection
+    - Check if programmator can read Target voltage ( around +3.3V )
+    - Select other option from ST-LINK conguration->Shared ( Enabled / Disabled ) 
+
+    Programmator can not erase memory
+    - Change mode to Normal 
+    - Select lower frequency ( 5 - 200 ) kHz 
+
 
 </details>    
