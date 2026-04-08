@@ -1,8 +1,35 @@
 # Firmware
 
+## How to programm microcontroller in heater
+
+<details>
+    <summary>Air 2D</summary>
+
+</details>
+
+<details>
+    <summary>Air 4D</summary>
+
+</details>
+
+<details>
+    <summary>Air 9D</summary>
+
+</details>
 
 
-## How programm microcontroller
+<details>
+    <summary>Flow 5</summary>
+
+</details>
+
+<details>
+    <summary>Flow 14</summary>
+
+</details>
+
+
+## How programm microcontroller in controll uint
 
 1. <details>
     <summary> Which microcontroller is on PCB </summary>
