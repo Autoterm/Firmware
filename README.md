@@ -1,6 +1,6 @@
 # Firmware
 
-## How to programm microcontroller in heater
+## How to programm microControler in heater
 
 <details>
     <summary>Air 2D</summary>
@@ -29,12 +29,12 @@
 </details>
 
 
-## How programm microcontroller in controll uint
+## How programm microControler in Control uint
 
 1. <details>
-    <summary> Which microcontroller is on PCB </summary>
+    <summary> Which microControler is on PCB </summary>
 
-    | Controll PCB          | Microcontroller     |
+    | Control PCB          | MicroControler     |
     | ----------------------| :---------------:   |
     | Baltica               | STM32               |
     | Boiler                | STM32               |
@@ -43,7 +43,7 @@
     | Mini                  | STM32               |
     | Push                  | STM32               |
     | Travel Box            | STM32               |
-
+    | CAN Gateway           | STM32               |
 </details>
 
 2. <details>
@@ -51,7 +51,7 @@
 
     ### Programming software
 
-    | Microcontroller       | Programmator      | Link |
+    | MicroControler       | Programmator      | Link |
     | ----------------------| :---------------: | ---- |
     | STM32                 | ST-Link-V2        | https://www.st.com/en/development-tools/stsw-link004.html |
     | STM32                 | STLINK-V3MINIE    | https://www.st.com/en/development-tools/stm32cubeprog.html |
@@ -74,27 +74,27 @@
     <summary> Pinout for each PCB </summary>
 
     +   <details>
-        <summary> Baltica Controll Pinout </summary>
+        <summary> Baltica Control Pinout </summary>
 
-        [Hex file with Baltica Heater code](./Baltica-Controll/Heater/PushBoil%20(85C).bin)
+        [Hex file with Baltica Heater code](./Baltica-Control/Heater/PushBoil%20(85C).bin)
 
-        <img src="./Baltica-Controll/Heater/Baltica-Controll-Pinout.jpeg" width="600">
+        <img src="./Baltica-Control/Control Panel/Comfort Control/Comfort-Control-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
-        <summary> Boiler Controll Pinout </summary>
+        <summary> Boiler Control Pinout </summary>
 
-        [Hex file with Boiler Controll code](./Boiler-Controll/)
+        [Hex file with Boiler Control code](./Boiler-Control/)
 
-        <img src="./Boiler-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="600">
+        <img src="./Boiler-Control/Comfort-Controll-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
-        <summary> Comfort Controll Pinout </summary>
+        <summary> Comfort Control Pinout </summary>
 
-        [Hex file with code](./Comfort-Controll/STM32_CC_V1.27.bin)
+        [Hex file with code](./Comfort-Control/STM32_CC_V1.27.bin)
 
-        <img src="./Comfort-Controll/Comfort-Controll-STM32-Pinout.jpeg" width="600">
+        <img src="./Comfort-Control/Comfort-Control-STM32-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -106,19 +106,19 @@
         </details>
 
     +   <details>
-        <summary> Mini Controll Pinout </summary>
+        <summary> Mini Control Pinout </summary>
 
-        [Hex file with Mini-Controll code](./Mini-Controll/MiniControl.bin)
+        [Hex file with Mini-Control code](./Mini-Control/MiniControl.bin)
 
-        <img src="./Mini-Controll/MIni-Controll-Pinout.jpeg" width="600">
+        <img src="./Mini-Control/MIni-Control-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
-        <summary> Push Controll Pinout </summary>
+        <summary> Push Control Pinout </summary>
 
-        [Hex file with Push-Controll code](./Push-Controll/PushControl_V1.00.bin)
+        [Hex file with Push-Control code](./Push-Control/PushControl_V1.00.bin)
 
-        <img src="./Push-Controll/Push-Controll-Pinout.jpeg" width="600">
+        <img src="./Push-Control/Push-Control-Pinout.jpeg" width="600">
         </details>
 
     +   <details>
@@ -126,8 +126,16 @@
 
         [Hex file with Travel-Box code](./Travel-Box-Relay/Pow_switch_V1.1.bin)
 
-        <img src="./Travel-Box-Relay/Push-Controll-Pinout.jpeg" width="600">
+        <img src="./Travel-Box-Relay/Push-Control-Pinout.jpeg" width="600">
         </details>
+
+    +   <details>
+        <summary> CAN Gateway Pinout </summary>
+
+        [Hex file with CAN Gateway code](./CAN-Gateway/UART-CAN-GATEWAY_V1.01.hex)
+
+        <img src="./CAN-Gateway/CAN-Gateway-Pinout.jpeg" width="600">
+        </details>    
 
 
 </details>
@@ -171,7 +179,7 @@
 
         <img src="./img/STLinkUtility5.png" width="800">
 
-        4.11. Disconnect from microcontroller by selcting Target -> Disconnect.
+        4.11. Disconnect from microControler by selcting Target -> Disconnect.
         > **_NOTE:_**  Now you can remove programming pins.
 
         </details> 
